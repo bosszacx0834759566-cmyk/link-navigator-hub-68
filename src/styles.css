@@ -82,7 +82,7 @@
   --chart-3: oklch(0.789 0.159 74.1);
   --chart-4: oklch(0.579 0.214 27.2);
   --chart-5: oklch(0.678 0.148 238.1);
-  --icon-foreground: oklch(0 0 0);
+  --icon-foreground: #ffffff;
 }
 
 @layer base {
@@ -103,8 +103,8 @@
   }
 
   .lucide {
-    color: var(--color-icon-foreground);
-    stroke: var(--color-icon-foreground);
+    color: var(--color-icon-foreground) !important;
+    stroke: var(--color-icon-foreground) !important;
   }
 }
 
