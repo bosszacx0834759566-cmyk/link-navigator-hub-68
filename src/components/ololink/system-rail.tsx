@@ -75,9 +75,8 @@ export function SystemRail({ state }: { state: OloLinkState }) {
     <nav
       className={cn(
         'pointer-events-auto absolute bottom-0 left-0 top-0 z-40 flex w-[68px] flex-col items-center gap-1.5 overflow-y-auto py-3 [scrollbar-width:none]',
-        state.view === '3d'
-          ? 'border-r border-white/10 bg-white/10 shadow-[0_8px_32px_-8px_rgba(0,0,0,0.45)] backdrop-blur-2xl'
-          : 'border-r border-transparent bg-transparent'
+        'border-r border-white/15 bg-white/10 shadow-[0_8px_32px_-8px_rgba(0,0,0,0.45)] backdrop-blur-2xl backdrop-saturate-150',
+        'supports-[backdrop-filter:blur(0)]:bg-white/[0.07]'
       )}
     >
       {/* earth view mode */}
