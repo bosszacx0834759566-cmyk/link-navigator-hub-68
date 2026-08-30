@@ -7,7 +7,7 @@ import {
   RadioTower,
   Search,
   Settings2,
-  Box,
+  Globe,
   Map,
   type LucideIcon,
 } from 'lucide-react';
@@ -83,7 +83,7 @@ export function SystemRail({ state }: { state: OloLinkState }) {
       <div className="flex flex-col items-center gap-1">
         {(
           [
-            { id: '3d', icon: Box, label: '3D view' },
+            { id: '3d', icon: Globe, label: '3D view' },
             { id: '2d', icon: Map, label: '2D view' },
           ] as const
         ).map((m) => {
