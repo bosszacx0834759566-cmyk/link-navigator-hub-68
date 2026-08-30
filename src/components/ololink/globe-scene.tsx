@@ -15,9 +15,9 @@ import {
 import * as THREE from 'three';
 
 import { EARTH_8K_URL, EARTH_TILE_BY_REGION, type EarthTile } from '@/lib/earth-textures';
-import earthNight from '@/assets/earth_lights_2048.png';
+import earthNightAsset from '@/assets/earth_lights_2048.png.asset.json';
 import earthCloudsAsset from '@/assets/earth_clouds_1024.png.asset.json';
-import earthSpec from '@/assets/earth_specular_2048.jpg';
+import earthSpecAsset from '@/assets/earth_specular_2048.jpg.asset.json';
 
 import {
   ASSET_BY_ID,
@@ -274,9 +274,9 @@ function Earth() {
   const { level, region } = useLod();
   const maps = useLoader(THREE.TextureLoader, [
     EARTH_8K_URL,
-    earthNight,
+    earthNightAsset.url,
     earthCloudsAsset.url,
-    earthSpec,
+    earthSpecAsset.url,
   ]);
   const day = maps[0]!;
   const night = maps[1]!;
